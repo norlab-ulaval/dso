@@ -194,12 +194,12 @@ bool setting_logStuff = true;
 
 
 
-bool goStepByStep = false;
+bool goStepByStep = true;
 
 
-bool setting_render_displayCoarseTrackingFull=false;
+bool setting_render_displayCoarseTrackingFull=true;
 bool setting_render_renderWindowFrames=true;
-bool setting_render_plotTrackingFull = false;
+bool setting_render_plotTrackingFull = true;
 bool setting_render_display3D = true;
 bool setting_render_displayResidual = true;
 bool setting_render_displayVideo = true;

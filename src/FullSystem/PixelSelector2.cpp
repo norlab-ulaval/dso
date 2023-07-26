@@ -92,6 +92,7 @@ void PixelSelector::makeHists(const FrameHessian* const fh)
 		{
 			float* map0 = mapmax0+32*x+32*y*w;
 			int* hist0 = gradHist;// + 50*(x+y*w32);
+
 			memset(hist0,0,sizeof(int)*50);
 
 			for(int j=0;j<32;j++) for(int i=0;i<32;i++)
@@ -106,6 +107,7 @@ void PixelSelector::makeHists(const FrameHessian* const fh)
 			}
 
 			ths[x+y*w32] = computeHistQuantil(hist0,setting_minGradHistCut) + setting_minGradHistAdd;
+			std::cout << "Median Gradient: " << ths << std::endl;
 		}
 
 	for(int y=0;y<h32;y++)
